@@ -1,0 +1,244 @@
+:root {
+    --primary-color: rgb(255, 123, 0);
+    --secondary-color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.appbar {
+    box-shadow: none !important;
+}
+
+.appbar-light {
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+}
+
+.mr-0 {
+    margin: auto 0 auto auto !important;
+}
+
+.ml-0 {
+    margin: auto auto auto 0 !important;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.w-auto {
+    width: auto;
+}
+
+.h-auto {
+    height: auto;
+}
+
+.w-screen {
+    width: 100vw;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.overflow-y-auto {
+    overflow-y: auto;
+}
+
+.overflow-x-auto {
+    overflow-x: auto;
+}
+
+.overflow-hidden {
+    overflow: hidden !important;
+}
+
+.col-auto {
+    padding: 0 !important;
+}
+
+.btn {
+    margin: 0.1rem !important;
+    width: 100%;
+}
+
+.btn-calculator {
+    background-color: var(--secondary-color) !important;
+    color: #000 !important;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color) !important;
+    color: var(--primary-color) !important;
+    border: none !important;
+    transition: all .3s ease;
+}
+
+.btn-primary-hover:hover {
+    background-color: var(--primary-color) !important;
+    color: var(--secondary-color) !important;
+    transition: all .3s ease;
+}
+
+.btn-bold {
+    font-weight: bold !important;
+}
+
+.btn-rounded {
+    border-radius: 100px !important
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link-primary {
+    text-decoration: none !important;
+    transition: all .3s ease;
+}
+
+.link-primary:hover {
+    color: var(--primary-color) !important;
+    transition: all .3s ease;
+}
+
+.vertical-middle {
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.square {
+    width: 100% !important;
+    height: 100px !important;
+}
+
+.btn-primary:active:focus,
+.btn-primary:focus,
+.btn-check:focus+.btn,
+.btn:focus {
+    box-shadow: none !important;
+}
+
+.solution-text-field {
+    color: var(--primary-color) !important;
+    text-align: end;
+    font-weight: bold;
+}
+
+.calculator-input {
+    width: 100%;
+    padding: 0 0.5rem !important;
+    background-color: #fff;
+}
+
+.keyboard-mobile {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 80%;
+}
+
+.text-history {
+    color: rgb(104, 104, 104);
+}
+
+.only-mobile {
+    display: block;
+    transition: all .3s ease;
+}
+
+.only-desktop {
+    display: none;
+    transition: all .3s ease;
+}
+
+input.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.solution-card {
+    padding: 1rem;
+    margin: 0.25rem;
+}
+
+.position-middle {
+    top: 50%;
+}
+
+@media (min-width: 769px) {
+    .only-mobile {
+        display: none;
+    }
+    .only-desktop {
+        display: block;
+    }
+}
+
+@keyframes hideUp {
+    0% {
+        transform: translate(0, 0, 0);
+        -webkit-transform: translate(0, 0, 0);
+        -moz-transform: translate(0, 0, 0);
+        -ms-transform: translate(0, 0, 0);
+        -o-transform: translate(0, 0, 0);
+    }
+    100% {
+        transform: translate(0, -100, 0);
+        -webkit-transform: translate(0, -100, 0);
+        -moz-transform: translate(0, -100, 0);
+        -ms-transform: translate(0, -100, 0);
+        -o-transform: translate(0, -100, 0);
+    }
+}
+
+@-webkit-keyframes hideUp {
+    0% {
+        transform: translate(0, 0, 0);
+        -webkit-transform: translate(0, 0, 0);
+        -moz-transform: translate(0, 0, 0);
+        -ms-transform: translate(0, 0, 0);
+        -o-transform: translate(0, 0, 0);
+    }
+    100% {
+        transform: translate(0, -100, 0);
+        -webkit-transform: translate(0, -100, 0);
+        -moz-transform: translate(0, -100, 0);
+        -ms-transform: translate(0, -100, 0);
+        -o-transform: translate(0, -100, 0);
+    }
+}
